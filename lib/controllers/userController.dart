@@ -52,7 +52,7 @@ Future <void> saveUserData()async {
   var uid = uidCotroller.text;
   var name = nameCotroller.text;
   var phone = mobileCotroller.text;
-  var password = passwordController.text;
+  var password = BCrypt.hashpw(passwordController.text, BCrypt.gensalt());
   var email = '${uid}@cuchd.in';
 
 

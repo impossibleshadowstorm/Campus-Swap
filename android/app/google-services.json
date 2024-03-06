@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "755422449419",
+    "project_id": "campusswap-8f935",
+    "storage_bucket": "campusswap-8f935.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:755422449419:android:44d69f4930dac1dfb25c0e",
+        "android_client_info": {
+          "package_name": "com.impossibleshadowstorm.campus_swap"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjDoEnsgMUnA6k2S829xEQxR_v-VW6TWM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

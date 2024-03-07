@@ -1,8 +1,7 @@
 import 'dart:convert';
 import 'dart:developer';
-
 import 'package:bcrypt/bcrypt.dart';
-import 'package:campus_swap/constants/text_strings.dart';
+import 'package:campus_swap/constants/firebase_strings.dart';
 import 'package:campus_swap/services/storage_services.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
@@ -11,7 +10,6 @@ import 'package:http/http.dart' as http;
 
 class UserCotroller extends GetxController
 {
-  var Constant = Constants();
   var Storage = StorageServices();
 
 
@@ -38,7 +36,7 @@ TextEditingController otpController = TextEditingController();
 
 Future <void> sendOTP() async{
 
-  final userExistance = await FirebaseFirestore.instance.collection('user').doc(uidCotroller.text).get();
+  final userExistance = await FirebaseFirestore.instance.collection(user).doc(uidCotroller.text).get();
   
   if(!userExistance.exists)
   { 
